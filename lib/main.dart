@@ -1,7 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:student_registration_app/firebase_options.dart';
-import 'package:student_registration_app/screens/splash/splash.dart';
+import 'package:student_registration_app/screens/auth/signin.dart';
+
 
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Splash(),
+      home: const Signin(),
     );
   }
 

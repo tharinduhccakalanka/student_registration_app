@@ -10,6 +10,7 @@ import 'package:student_registration_app/utills/app_colors.dart';
 class SocialButton extends StatelessWidget {
   final String assetPath;
   final VoidCallback onTap;
+ 
 
   const SocialButton({
     required this.assetPath,
@@ -64,6 +65,10 @@ class Signin extends StatefulWidget {
 }
 
 class _SigninState extends State<Signin> {
+  late bool _obscurePassword = true;
+
+  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,10 +115,10 @@ class _SigninState extends State<Signin> {
                   ),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: "Enter your Name here",
+                      hintText: "Enter your Email here",
                       hintStyle: const TextStyle(color: AppColors.ash),
                       label: const Text(
-                        "Name",
+                        "Email",
                         style: TextStyle(color: AppColors.ash),
                       ),
                       enabledBorder: OutlineInputBorder(
@@ -145,12 +150,23 @@ class _SigninState extends State<Signin> {
                     ],
                   ),
                   child: TextField(
+                    obscureText: _obscurePassword,
                     decoration: InputDecoration(
-                      hintText: "Enter your Email here",
+                      hintText: "Enter your Password here",
                       hintStyle: const TextStyle(color: AppColors.ash),
                       label: const Text(
-                        "Email",
+                        "Password",
                         style: TextStyle(color: AppColors.ash),
+                      ),
+                      suffixIcon: IconButton(
+                        icon: Icon(
+                          _obscurePassword ? Icons.visibility_off : Icons.visibility,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            _obscurePassword = !_obscurePassword;
+                          });
+                        },
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(4),
