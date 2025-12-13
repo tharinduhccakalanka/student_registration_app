@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:student_registration_app/components/custom_back_button.dart';
 import 'package:student_registration_app/screens/auth/fogot_password.dart';
 import 'package:student_registration_app/screens/auth/signup.dart';
 import 'package:student_registration_app/screens/main_navigation.dart';
@@ -65,7 +64,7 @@ class Signin extends StatefulWidget {
 }
 
 class _SigninState extends State<Signin> {
-  late bool _obscurePassword = true;
+  bool _obscurePassword = true;
 
   
 
@@ -79,10 +78,7 @@ class _SigninState extends State<Signin> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Align(
-                  alignment: Alignment.topLeft,
-                  child: CommonBackButton(),
-                ),
+              
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 1),
                   child: Text(
