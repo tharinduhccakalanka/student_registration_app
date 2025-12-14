@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:logger/web.dart';
 import 'package:student_registration_app/screens/auth/fogot_password.dart';
 import 'package:student_registration_app/screens/auth/signup.dart';
-import 'package:student_registration_app/screens/main_navigation.dart';
 import 'package:student_registration_app/utills/app_assets.dart';
 import 'package:student_registration_app/utills/app_colors.dart';
 
@@ -66,7 +66,8 @@ class Signin extends StatefulWidget {
 class _SigninState extends State<Signin> {
   bool _obscurePassword = true;
 
-  
+  TextEditingController _email = TextEditingController();
+  TextEditingController _password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -110,6 +111,7 @@ class _SigninState extends State<Signin> {
                     ],
                   ),
                   child: TextField(
+                    controller: _email,
                     decoration: InputDecoration(
                       hintText: "Enter your Email here",
                       hintStyle: const TextStyle(color: AppColors.ash),
@@ -146,6 +148,7 @@ class _SigninState extends State<Signin> {
                     ],
                   ),
                   child: TextField(
+                    controller: _password,
                     obscureText: _obscurePassword,
                     decoration: InputDecoration(
                       hintText: "Enter your Password here",
@@ -206,12 +209,8 @@ class _SigninState extends State<Signin> {
                         borderRadius: BorderRadius.circular(16)),
                   ),
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const MainNavigation(),
-                      ),
-                    );
+                    Logger().i(_email.text);
+
                   },
                   child: const Text(
                     "Sign in",

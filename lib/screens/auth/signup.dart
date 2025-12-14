@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:logger/web.dart';
 import 'package:student_registration_app/screens/auth/signin.dart';
 import 'package:student_registration_app/utills/app_assets.dart';
 import 'package:student_registration_app/utills/app_colors.dart';
@@ -22,6 +23,15 @@ class _SignupState extends State<Signup> {
       isLoading = true;
     });
   }
+
+    TextEditingController _first_name = TextEditingController();
+  TextEditingController _last_name = TextEditingController();
+  TextEditingController _birthday = TextEditingController();
+  TextEditingController _mobile_number = TextEditingController();
+  TextEditingController _gender = TextEditingController();
+  TextEditingController _address = TextEditingController();   
+  TextEditingController _school_university = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -64,6 +74,7 @@ class _SignupState extends State<Signup> {
                       )
                     ]),
                 child: TextField(
+                  controller: _first_name,
                   decoration: InputDecoration(
                     hintText: "Enter your Name here",
                     hintStyle: const TextStyle(color: AppColors.ash),
@@ -101,6 +112,7 @@ class _SignupState extends State<Signup> {
                       )
                     ]),
                 child: TextField(
+                  controller: _last_name,
                   decoration: InputDecoration(
                     hintText: "Enter your Name here",
                     hintStyle: const TextStyle(color: AppColors.ash),
@@ -139,6 +151,7 @@ class _SignupState extends State<Signup> {
                   ],
                 ),
                 child: TextField(
+                  controller: birthdayController,
                   readOnly: true,
                   decoration: InputDecoration(
                     hintText: "Select your Birthday",
@@ -222,6 +235,7 @@ class _SignupState extends State<Signup> {
                   ],
                 ),
                 child: TextField(
+                  controller: _mobile_number,
                   keyboardType:
                       TextInputType.phone, // Set the keyboard type for numbers
                   maxLength: 10, // Limit the input to 10 digits (optional)
@@ -369,6 +383,7 @@ class _SignupState extends State<Signup> {
                   ],
                 ),
                 child: TextField(
+                  controller: _school_university,
                   decoration: InputDecoration(
                     hintText: "Enter your School or University here",
                     hintStyle: const TextStyle(color: AppColors.ash),
@@ -455,4 +470,6 @@ class _SignupState extends State<Signup> {
       ),
     );
   }
+
+
 }

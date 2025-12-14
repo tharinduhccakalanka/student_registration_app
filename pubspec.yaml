@@ -46,6 +46,9 @@ dependencies:
   chat_bubbles: ^1.7.0
   image_picker: ^1.2.0
   firebase_core: ^4.2.1
+  logger: ^2.6.2
+  
+
   
   
  
