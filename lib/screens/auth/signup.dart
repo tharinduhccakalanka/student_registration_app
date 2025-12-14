@@ -12,10 +12,8 @@ class Signup extends StatefulWidget {
 }
 
 class _SignupState extends State<Signup> {
-  final TextEditingController birthdayController = TextEditingController();
-  final TextEditingController addressController = TextEditingController();
   int? age;
-
+  bool _obscurePassword = true;
   bool isLoading = true;
 
   Future<void> _fetchCurrentLocation() async {
@@ -24,14 +22,17 @@ class _SignupState extends State<Signup> {
     });
   }
 
-    TextEditingController _first_name = TextEditingController();
+  TextEditingController _first_name = TextEditingController();
   TextEditingController _last_name = TextEditingController();
+  TextEditingController _email = TextEditingController();
+  TextEditingController _password = TextEditingController();
   TextEditingController _birthday = TextEditingController();
   TextEditingController _mobile_number = TextEditingController();
-  TextEditingController _gender = TextEditingController();
-  TextEditingController _address = TextEditingController();   
+
+  TextEditingController _address = TextEditingController();
   TextEditingController _school_university = TextEditingController();
 
+  String? selectedGender;
 
   @override
   Widget build(BuildContext context) {
@@ -140,6 +141,92 @@ class _SignupState extends State<Signup> {
               ),
               Container(
                 decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(4),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppColors.ash,
+                        offset: const Offset(0, 2),
+                        blurRadius: 10,
+                      )
+                    ]),
+                child: TextField(
+                  controller: _email,
+                  decoration: InputDecoration(
+                    hintText: "Enter your Email here",
+                    hintStyle: const TextStyle(color: AppColors.ash),
+                    label: const Text(
+                      "Email",
+                      style: TextStyle(color: AppColors.ash),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      borderSide: const BorderSide(
+                        color: AppColors.primaryColor,
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      borderSide: const BorderSide(
+                        color: AppColors.primaryColor,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(4),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.ash,
+                      offset: const Offset(0, 0),
+                      blurRadius: 10,
+                    ),
+                  ],
+                ),
+                child: TextField(
+                  controller: _password,
+                  obscureText: _obscurePassword,
+                  decoration: InputDecoration(
+                    hintText: "Enter your Password here",
+                    hintStyle: const TextStyle(color: AppColors.ash),
+                    label: const Text(
+                      "Password",
+                      style: TextStyle(color: AppColors.ash),
+                    ),
+                    suffixIcon: IconButton(
+                      icon: Icon(
+                        _obscurePassword
+                            ? Icons.visibility_off
+                            : Icons.visibility,
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          _obscurePassword = !_obscurePassword;
+                        });
+                      },
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      borderSide: const BorderSide(
+                        color: AppColors.primaryColor,
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      borderSide: const BorderSide(
+                        color: AppColors.primaryColor,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(4),
                   color: Colors.white,
                   boxShadow: [
@@ -151,7 +238,7 @@ class _SignupState extends State<Signup> {
                   ],
                 ),
                 child: TextField(
-                  controller: birthdayController,
+                  controller: _birthday,
                   readOnly: true,
                   decoration: InputDecoration(
                     hintText: "Select your Birthday",
@@ -192,7 +279,7 @@ class _SignupState extends State<Signup> {
                     );
                     if (pickedDate != null) {
                       setState(() {
-                        birthdayController.text =
+                        _birthday.text =
                             "${pickedDate.year}-${pickedDate.month}-${pickedDate.day}";
 
                         // Calculate age
@@ -314,7 +401,9 @@ class _SignupState extends State<Signup> {
                     ),
                   ],
                   onChanged: (String? value) {
-                    // Handle selection
+                    setState(() {
+                      selectedGender = value;
+                    });
                   },
                 ),
               ),
@@ -334,8 +423,8 @@ class _SignupState extends State<Signup> {
                   ],
                 ),
                 child: TextField(
-                  readOnly: true,
-                  controller: addressController,
+                  readOnly: false,
+                  controller: _address,
                   decoration: InputDecoration(
                     hintText: isLoading
                         ? "Fetching location..."
@@ -418,11 +507,7 @@ class _SignupState extends State<Signup> {
                       borderRadius: BorderRadius.circular(16)),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Signin(),
-                      ));
+                  validateFields(context);
                 },
                 child: Text(
                   "Sign Up",
@@ -471,5 +556,59 @@ class _SignupState extends State<Signup> {
     );
   }
 
+  void validateFields(BuildContext context) {
+    if (_first_name.text.trim().isEmpty) {
+      showError(context, "First Name is required");
+      return;
+    }
 
+    if (_last_name.text.trim().isEmpty) {
+      showError(context, "Last Name is required");
+      return;
+    }
+
+    if (_birthday.text.trim().isEmpty) {
+      showError(context, "Please select your Birthday");
+      return;
+    }
+
+    if (_mobile_number.text.trim().isEmpty) {
+      showError(context, "Mobile Number is required");
+      return;
+    }
+
+    if (_mobile_number.text.trim().length != 10) {
+      showError(context, "Enter a valid 10-digit Mobile Number");
+      return;
+    }
+
+    if (selectedGender == null) {
+      showError(context, "Please select Gender");
+      return;
+    }
+
+    if (_address.text.trim().isEmpty) {
+      showError(context, "Address is required");
+      return;
+    }
+
+    if (_school_university.text.trim().isEmpty) {
+      showError(context, "School/University is required");
+      return;
+    }
+
+    /// ✅ All validations passed
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text("All fields are valid ✅")),
+    );
+  }
+
+  void showError(BuildContext context, String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(message),
+        backgroundColor: Colors.red,
+      ),
+    );
+  }
 }
