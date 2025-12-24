@@ -31,7 +31,7 @@ class _FogotPasswordState extends State<FogotPassword> {
                   child: const Text(
                     "Fogot password",
                     style: TextStyle(
-                      fontSize: 35,
+                      fontSize: 30,
                       color: AppColors.primaryColor,
                       fontWeight: FontWeight.bold,
                     ),

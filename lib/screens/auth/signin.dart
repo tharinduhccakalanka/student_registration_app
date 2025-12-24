@@ -220,12 +220,12 @@ class _SigninState extends State<Signin> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 25),
+                const SizedBox(height: 50),
                 const Text(
-                  "Or Signin with",
+                  "or Signin with",
                   style: TextStyle(fontSize: 13),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 15),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -266,7 +266,7 @@ class _SigninState extends State<Signin> {
                               fontWeight: FontWeight.bold, fontSize: 15)),
                     ),
                     SizedBox(
-                      height: 35,
+                      height: 60,
                     )
                   ],
                 ),
