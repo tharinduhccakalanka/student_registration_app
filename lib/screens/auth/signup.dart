@@ -510,7 +510,7 @@ class _SignupState extends State<Signup> {
                   validateFields(context);
                 },
                 child: Text(
-                  "Sign Up",
+                  "SignUp",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -526,7 +526,7 @@ class _SignupState extends State<Signup> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Already have an account",
+                      "Already have an Account",
                     ),
                     TextButton(
                       onPressed: () {
@@ -537,7 +537,7 @@ class _SignupState extends State<Signup> {
                             ));
                       },
                       child: Text(
-                        "Sign In",
+                        "SignIn",
                         style: TextStyle(
                           fontSize: 16,
                         ),
