@@ -526,7 +526,7 @@ class _SignupState extends State<Signup> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Already have an Account",
+                      "Already have an account",
                     ),
                     TextButton(
                       onPressed: () {
@@ -537,7 +537,7 @@ class _SignupState extends State<Signup> {
                             ));
                       },
                       child: Text(
-                        "SignIn",
+                        "Sign In",
                         style: TextStyle(
                           fontSize: 16,
                         ),
