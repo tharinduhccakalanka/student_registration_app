@@ -51,7 +51,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
 
   final List<Lesson> lessons = [
     Lesson(
-      title: "What is Web development",
+      title: "What is Web Development",
       duration: "20 min",
       isVideo: true,
       icon: Icons.play_circle_fill,
@@ -72,7 +72,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
           "https://www.cs.cmu.edu/~bam/uicourse/830spring09/BFeiginMobileApplicationDevelopment.pdf",
     ),
     Lesson(
-      title: "Development process",
+      title: "Development Process",
       duration: "16 min",
       isVideo: true,
       isCompleted: true,
@@ -93,7 +93,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
           "https://www.cs.cmu.edu/~bam/uicourse/830spring09/BFeiginMobileApplicationDevelopment.pdf",
     ),
     Lesson(
-      title: "Backend development",
+      title: "Backend Development",
       duration: "45 min",
       isVideo: true,
       isCompleted: true,
@@ -174,7 +174,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
         icon: Icon(Icons.celebration, size: 50, color: Colors.amber),
         title: Text('Congratulations!',
             style: TextStyle(fontWeight: FontWeight.bold)),
-        content: Text('You successfully completed all modules!'),
+        content: Text('You Have Successfully Completed All Modules!'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
