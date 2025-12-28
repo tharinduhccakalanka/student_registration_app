@@ -72,7 +72,7 @@ class _FogotPasswordState extends State<FogotPassword> {
                       ]),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: "Enter your Email here",
+                      hintText: "Enter your email here",
                       hintStyle: const TextStyle(color: AppColors.ash),
                       label: const Text(
                         "Email",
