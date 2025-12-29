@@ -275,7 +275,7 @@ class _MernDetailsState extends State<MernDetails> {
                       ],
                     ),
                     const Spacer(),
-                    const Text("41 Enrolled"),
+                    const Text("37 Enrolled"),
                   ],
                 ),
               ],
