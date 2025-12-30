@@ -49,8 +49,8 @@ class _FogotPasswordState extends State<FogotPassword> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 7),
                   child: Text(
-                    "Please, enter your email address. You will receive a link to create a new password via email.",
-                    style: TextStyle(
+                    "Please, enter your email address.You will recieve a link to crate a new password via email.",
+                      style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                     ),
