@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:logger/web.dart';
 import 'package:student_registration_app/screens/auth/signin.dart';
 import 'package:student_registration_app/utills/app_assets.dart';
 import 'package:student_registration_app/utills/app_colors.dart';
@@ -77,7 +76,7 @@ class _SignupState extends State<Signup> {
                 child: TextField(
                   controller: _first_name,
                   decoration: InputDecoration(
-                    hintText: "Enter your Name here",
+                    hintText: "Enter Your Name Here",
                     hintStyle: const TextStyle(color: AppColors.ash),
                     label: const Text(
                       "First Name",

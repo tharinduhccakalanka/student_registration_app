@@ -29,7 +29,7 @@ class _FogotPasswordState extends State<FogotPassword> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 50),
                   child: const Text(
-                    "Fogot password",
+                    "Fogot Password",
                     style: TextStyle(
                       fontSize: 30,
                       color: AppColors.primaryColor,
