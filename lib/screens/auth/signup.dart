@@ -241,7 +241,7 @@ class _SignupState extends State<Signup> {
                   controller: _birthday,
                   readOnly: true,
                   decoration: InputDecoration(
-                    hintText: "Select your Birthday",
+                    hintText: "Select Your Birthday",
                     hintStyle: const TextStyle(color: AppColors.ash),
                     label: const Text(
                       "Birthday",
@@ -327,7 +327,7 @@ class _SignupState extends State<Signup> {
                       TextInputType.phone, // Set the keyboard type for numbers
                   maxLength: 10, // Limit the input to 10 digits (optional)
                   decoration: InputDecoration(
-                    hintText: "Enter your Mobile Number",
+                    hintText: "Enter Your Mobile Number",
                     hintStyle: const TextStyle(color: AppColors.ash),
                     label: const Text(
                       "Mobile Number",
@@ -367,7 +367,7 @@ class _SignupState extends State<Signup> {
                 ),
                 child: DropdownButtonFormField<String>(
                   decoration: InputDecoration(
-                    hintText: "Select your Gender",
+                    hintText: "Select Your Gender",
                     hintStyle: const TextStyle(color: AppColors.ash),
                     label: const Text(
                       "Gender",
