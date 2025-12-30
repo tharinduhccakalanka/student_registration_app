@@ -474,7 +474,7 @@ class _SignupState extends State<Signup> {
                 child: TextField(
                   controller: _school_university,
                   decoration: InputDecoration(
-                    hintText: "Enter your School or University here",
+                    hintText: "Enter Your School or University Here",
                     hintStyle: const TextStyle(color: AppColors.ash),
                     label: const Text(
                       "School/University",
@@ -510,7 +510,7 @@ class _SignupState extends State<Signup> {
                   validateFields(context);
                 },
                 child: Text(
-                  "SignUp",
+                  "Sign Up",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -526,7 +526,7 @@ class _SignupState extends State<Signup> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Already Have an Account",
+                      "Already have an account",
                     ),
                     TextButton(
                       onPressed: () {
