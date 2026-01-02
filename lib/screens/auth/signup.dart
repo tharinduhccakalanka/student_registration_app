@@ -76,7 +76,7 @@ class _SignupState extends State<Signup> {
                 child: TextField(
                   controller: _first_name,
                   decoration: InputDecoration(
-                    hintText: "Enter Your Name Here",
+                    hintText: "Enter your name here",
                     hintStyle: const TextStyle(color: AppColors.ash),
                     label: const Text(
                       "First Name",
