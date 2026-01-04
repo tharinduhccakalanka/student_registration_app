@@ -238,10 +238,10 @@ class _WebDevDetailsState extends State<WebDevDetails> {
           children: [
             // Image Preview
             Container(
-              margin: const EdgeInsets.all(14),
-              height: 198,
+              margin: const EdgeInsets.all(16),
+              height: 200,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(12),
                 image: const DecorationImage(
                   image: NetworkImage(
                     'https://wallpapers.com/images/high/web-development-team-collaboration-illustration-yz5n469ruq1f8yb9-2.png',
@@ -293,7 +293,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
                         ],
                       ),
                       const Spacer(),
-                      const Text("655 Enrolled"),
+                      const Text("654 enrolled"),
                     ],
                   ),
                 ],
@@ -305,7 +305,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
               padding: EdgeInsets.only(left: 17),
               child: Align(
                 alignment: Alignment.centerLeft,
-                child: const Text('Course Modules',
+                child: const Text('course modules',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
