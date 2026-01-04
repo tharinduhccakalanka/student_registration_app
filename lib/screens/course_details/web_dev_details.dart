@@ -238,10 +238,10 @@ class _WebDevDetailsState extends State<WebDevDetails> {
           children: [
             // Image Preview
             Container(
-              margin: const EdgeInsets.all(16),
-              height: 200,
+              margin: const EdgeInsets.all(14),
+              height: 198,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
                   image: NetworkImage(
                     'https://wallpapers.com/images/high/web-development-team-collaboration-illustration-yz5n469ruq1f8yb9-2.png',
@@ -293,7 +293,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
                         ],
                       ),
                       const Spacer(),
-                      const Text("654 Enrolled"),
+                      const Text("655 Enrolled"),
                     ],
                   ),
                 ],
