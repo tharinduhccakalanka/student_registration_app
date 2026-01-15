@@ -258,6 +258,8 @@ class _WebDevDetailsState extends State<WebDevDetails> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
+                    'Web Application Development Course'
+                    'Web Application Development Course'
                     'Web Application Development Course',
                     style: TextStyle(
                         fontSize: 20,

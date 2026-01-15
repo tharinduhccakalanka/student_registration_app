@@ -240,10 +240,7 @@ class _MernDetailsState extends State<MernDetails> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Text(
-                  'MERN Stack  Development Course'
-                  'MERN Stack  Development Course'
-                  'MERN Stack Development Course'
-                  'MERN Stack Development Course',
+                  'MERN Stack  Development Course',
                   style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
@@ -273,12 +270,12 @@ class _MernDetailsState extends State<MernDetails> {
                       children: [
                         Text('Jhon Carter',
                             style: TextStyle(fontWeight: FontWeight.bold)),
-                        Text('Full Stack web Developer',
+                        Text('Full Stack Web Developer',
                             style: TextStyle(color: Colors.grey)),
                       ],
                     ),
                     const Spacer(),
-                    const Text("37 Enrolled"),
+                    const Text("47 Enrolled"),
                   ],
                 ),
               ],
