@@ -264,7 +264,10 @@ class _WebDevDetailsState extends State<WebDevDetails> {
                     'Web Application Development Course'
                     'Web Application Development Course'
                     'Web Application Development Course'
-                    'Web Application Development Course',
+                    'Web Application Development Course'
+                    'Web Application Development Course'  
+                    'Web Application Development Course'
+                      ,
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
