@@ -259,24 +259,6 @@ class _WebDevDetailsState extends State<WebDevDetails> {
                 children: [
                   const Text(
                     'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'  
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
-                    'Web Application Development Course'
                       ,
                     style: TextStyle(
                         fontSize: 20,
@@ -307,7 +289,7 @@ class _WebDevDetailsState extends State<WebDevDetails> {
                         children: [
                           Text('By Sarah Wilson',
                               style: TextStyle(fontWeight: FontWeight.bold)),
-                          Text('Full Stack web Developer',
+                          Text('Full Stack Web Developer',
                               style: TextStyle(color: Colors.grey)),
                         ],
                       ),
