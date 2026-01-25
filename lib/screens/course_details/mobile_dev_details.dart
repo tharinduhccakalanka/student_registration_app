@@ -210,7 +210,11 @@ class _MobileDevDetailsState extends State<MobileDevDetails> {
                     'Mobile App Development Course'
                     'Mobile App Development Course'
                     "Mobile App Development Course"
-                    ' Mobile App Development Course',
+                    ' Mobile App Development Course'
+                    ' Mobile App Development Course'
+                    ' Mobile App Development Course'
+                    ' Mobile App Development Course'
+                      ' Mobile App Development Course',
 
                     style: TextStyle(
                         fontSize: 22,
