@@ -207,14 +207,7 @@ class _MobileDevDetailsState extends State<MobileDevDetails> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
-                    'Mobile App Development Course'
-                    'Mobile App Development Course'
-                    "Mobile App Development Course"
-                    ' Mobile App Development Course'
-                    ' Mobile App Development Course'
-                    ' Mobile App Development Course'
-                    ' Mobile App Development Course'
-                      ' Mobile App Development Course',
+                    'Mobile App Development Course',
 
                     style: TextStyle(
                         fontSize: 22,

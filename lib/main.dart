@@ -1,7 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:student_registration_app/firebase_options.dart';
-import 'package:student_registration_app/screens/auth/signin.dart';
+import 'package:student_registration_app/screens/main/home/home.dart';
+
+
 
 
 void main()async {
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Signin(),
+      home: const HomeContent(),
     );
   }
 
