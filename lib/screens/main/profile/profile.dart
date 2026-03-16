@@ -61,7 +61,7 @@ class _ProfileState extends State<Profile> {
                       "Profile",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 22,
+                        fontSize: 28,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

@@ -23,17 +23,15 @@ class _MainNavigationState extends State<MainNavigation> {
     ChatList(),
     Profile(),
   ];
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: _pages[_selectedIndex],
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(blurRadius: 20, color: Colors.black.withOpacity(0.1)),
-          ],
-        ),
+ @override
+Widget build(BuildContext context) {
+  return Scaffold(
+    body: _pages[_selectedIndex],
+
+    bottomNavigationBar: SafeArea(
+      bottom: false, // 🔥 removes extra bottom space
+      child: Container(
+        color: Colors.white,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
           child: GNav(
@@ -59,6 +57,7 @@ class _MainNavigationState extends State<MainNavigation> {
           ),
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }

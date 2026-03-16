@@ -23,9 +23,9 @@ class _MyCoursesState extends State<MyCourses> {
         title: const Center(
             child: Text(
           "My Courses",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(color: AppColors.primaryColor, fontWeight: FontWeight.bold,fontSize: 25),
         )),
-        backgroundColor: AppColors.primaryColor,
+
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
@@ -93,7 +93,7 @@ class _MyCoursesState extends State<MyCourses> {
               _buildCourseCard(
                 title: 'Mobile Application Development',
                 description:
-                    'Combining design creativity with technical App development skills',
+                    'Combining design creativity with technical app development skills',
                 progress: 0.7,
                 color: Colors.deepPurple[100]!,
                 onTap: () {
@@ -118,7 +118,7 @@ class _MyCoursesState extends State<MyCourses> {
               _buildCourseCard(
                 title: 'Web Application Development ',
                 description:
-                    'Congratulations! You completed the Web Application course 100%.',
+                    'Congratulations! You Have Completed the Web Application Course 100%.',
                 progress: 1.0,
                 color: Colors.green[100]!,
                 isComplete: true,
@@ -140,7 +140,7 @@ class _MyCoursesState extends State<MyCourses> {
             if (_selectedTab == 0 || _selectedTab == 1) // Show All or Ongoing
               _buildCourseCard(
                 title: 'MERN Stack',
-                description: 'Enhance your Framework  skills.',
+                description: 'Enhance your framework  skills.',
                 progress: 0.3,
                 color: Colors.blue[100]!,
                 onTap: () {
