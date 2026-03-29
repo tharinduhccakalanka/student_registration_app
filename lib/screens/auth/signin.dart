@@ -113,7 +113,7 @@ class _SigninState extends State<Signin> {
                   child: TextField(
                     controller: _email,
                     decoration: InputDecoration(
-                      hintText: "Enter your Email here",
+                      hintText: "Enter Your Email Here",
                       hintStyle: const TextStyle(color: AppColors.ash),
                       label: const Text(
                         "Email",
@@ -151,7 +151,7 @@ class _SigninState extends State<Signin> {
                     controller: _password,
                     obscureText: _obscurePassword,
                     decoration: InputDecoration(
-                      hintText: "Enter your Password here",
+                      hintText: "Enter Your Password Here",
                       hintStyle: const TextStyle(color: AppColors.ash),
                       label: const Text(
                         "Password",
