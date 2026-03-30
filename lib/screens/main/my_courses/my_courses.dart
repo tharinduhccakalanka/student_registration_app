@@ -93,7 +93,7 @@ class _MyCoursesState extends State<MyCourses> {
               _buildCourseCard(
                 title: 'Mobile Application Development',
                 description:
-                    'Combining design creativity with technical app development skills',
+                    'Combining the design creativity with enhancing technical app development skills',
                 progress: 0.7,
                 color: Colors.deepPurple[100]!,
                 onTap: () {
