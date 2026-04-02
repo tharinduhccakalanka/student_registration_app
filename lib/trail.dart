@@ -12,10 +12,11 @@ class _TrailState extends State<Trail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Trail'),
+        backgroundColor: Colors.green,
+        title: const Text('Trail Screen '),
       ),
       body: const Center(
-        child: Text('Trail'),
+        child: Text('Trail Page'),
       ),
     );
   }
