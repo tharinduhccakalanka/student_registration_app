@@ -15,9 +15,10 @@ class _TrailState extends State<Trail> {
         backgroundColor: Colors.green,
         title: const Text('Trail Screen '),
       ),
-      body: const Center(
-        child: Text('Trail Page'),
+      body: Center(
+        child: Image.asset('assets/images/coming_soon.png', width: 200, height: 200),
       ),
+      
     );
   }
 }
