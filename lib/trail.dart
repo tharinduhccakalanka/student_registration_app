@@ -14,10 +14,24 @@ class _TrailState extends State<Trail> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: const Text('Trail Screen '),
+        
       ),
       body: Center(
-        child: Image.asset('assets/images/coming_soon.png', width: 200, height: 200),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/images/coming_soon.png', width: 200, height: 200),
+            const SizedBox(height: 16),
+            const Text(
+              'Trail Screen is under construction',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
       ),
+
+
+
       
     );
   }
