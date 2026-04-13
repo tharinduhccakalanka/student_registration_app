@@ -23,7 +23,7 @@ class _TrailState extends State<Trail> {
             Image.asset('assets/images/coming_soon.png', width: 200, height: 200),
             const SizedBox(height: 16),
             const Text(
-              'Trail Screen is under construction',
+              'Testing the whole app maintainence here',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ],
