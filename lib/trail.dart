@@ -38,6 +38,15 @@ class _TrailState extends State<Trail> {
               'Testing the whole app maintainence here',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
+
+            Center(
+              child: ElevatedButton(
+               onPressed: () {
+                
+            },
+            child: Text('Continue'),
+  ),
+)
           ],
         ),
       ),
