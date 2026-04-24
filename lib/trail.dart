@@ -39,13 +39,19 @@ class _TrailState extends State<Trail> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
-            Center(
-              child: ElevatedButton(
-               onPressed: () {
-                
-            },
-            child: Text('Continue'),
+           Center(
+  child: ElevatedButton(
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const ProfileSetupScreen(),
+        ),
+      );
+    },
+    child: const Text('Continue'),
   ),
+),
 )
           ],
         ),
