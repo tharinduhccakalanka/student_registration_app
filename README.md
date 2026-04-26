@@ -1,6 +1,6 @@
 # student_registration_app
 
-A new Flutter project.
+A Mobile App solution for efficient course/student registration, built with Flutter.
 
 ## Getting Started
 
