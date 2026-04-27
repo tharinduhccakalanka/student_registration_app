@@ -45,7 +45,7 @@ class _TrailState extends State<Trail> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const ProfileSetupScreen(),
+          builder: (context) => const trailscreen(),
         ),
       );
     },
