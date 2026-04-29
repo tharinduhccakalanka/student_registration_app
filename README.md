@@ -2,7 +2,7 @@
 
 A Mobile App solution for efficient course/student registration, built with Flutter.
 
-## Getting Started
+## Project Architecture
 
 This project is a starting point for a Flutter application.
 
