@@ -4,7 +4,7 @@ A Mobile App solution for efficient course/student registration, built with Flut
 
 ## Project Architecture
 
-This project is a starting point for a Flutter application.
+This App is mailny focuses for a course registration solution application.
 
 A few resources to get you started if this is your first Flutter project:
 
