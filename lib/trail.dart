@@ -37,6 +37,7 @@ class _TrailState extends State<Trail> {
             const Text(
               'Testing the whole app maintainence here',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              color:Colors.blue,
             ),
 
            Center(
