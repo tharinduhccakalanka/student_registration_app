@@ -218,7 +218,7 @@ class _MobileDevDetailsState extends State<MobileDevDetails> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: const Text(
-                      'Master mobile app development with Flutter and Dart, learning to build beautiful, cross-platform applications efficiently. This course covers everything from UI design to state management, helping you launch apps',
+                      'Mobile app development with Flutter and Dart, learning to build userfriendly, cross-platform applications efficiently. This course covers everything from UI design to state management, helping you launch apps',
                       style: TextStyle(
                         fontSize: 12,
                       ),
