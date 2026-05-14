@@ -46,7 +46,7 @@ class _TrailState extends State<Trail> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) => const Login(),
         ),
       );
     },
