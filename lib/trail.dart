@@ -39,6 +39,10 @@ class _TrailState extends State<Trail> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               color:Colors.blue,
             ),
+            const Text(
+              'Testing the whole app maintainence here',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
 
            Center(
   child: ElevatedButton(
